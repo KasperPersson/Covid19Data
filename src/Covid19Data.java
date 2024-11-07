@@ -18,11 +18,34 @@ public class Covid19Data {
         this.indlagte = indlagte;
         this.dato = dato;
     }
+    public String getRegion(){
+        return region;
+    }
+    public String getAldersgruppe(){
+        return aldersgruppe;
+    }
+    public int getTilfælde(){
+        return bekræftedeTilfældeIAlt;
+    }
+    public int getDøde(){
+        return døde;
+    }
+    public int getIndlagte(){
+        return indlagte;
+    }
+    public int getIndlagtePåIntensiv(){
+        return indlagtePåIntensiv;
+    }
+
 
     @Override
     public String toString() {
-        return "Region: " + region + "Aldersgruppe: " + aldersgruppe + "Bekræftede tilfælde ialt: " + bekræftedeTilfældeIAlt +
-                "Døde: " + døde + "Indlagte på intensiv: " + indlagtePåIntensiv + "Indlagte: " + indlagte +
-                "Dato: " + dato;
+        return "Region: " + region + '\'' +
+                "Aldersgruppe: " + aldersgruppe + '\'' +
+                "Bekræftede tilfælde ialt: " + bekræftedeTilfældeIAlt + '\'' +
+                "Døde: " + døde + '\'' +
+                "Indlagte på intensiv: " + indlagtePåIntensiv + '\'' +
+                "Indlagte: " + indlagte + '\'' +
+                "Dato: " + dato + '\'';
     }
 }
